@@ -1,0 +1,395 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+    background-color: #C5F5F8;
+    margin: 0;
+   
+}
+
+
+.logo_pokemon{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15% ; 
+}
+
+.pokedex{
+    color: #41BA16;   
+    text-align: center;
+    margin-top: 15%;
+    text-shadow: 0px 8px 5px rgba(0,0,0,0.32);
+}
+
+a{
+    text-decoration: none;
+}
+
+.ver-pokemons{
+    background-color:#41BA16 ;
+    color:#ffffff;
+    font-size: 18px;
+    font-weight:normal;
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    border-radius: 5px;
+    display: block;
+}
+   
+   
+
+.card-resultado{
+    padding: 40px;
+	margin: 0 auto;
+}
+  
+  
+.lista-pokedex{
+    display: grid;
+	grid-template-columns: repeat(auto-fit, min(320px, 1fr));
+	grid-gap: 20px;
+    padding-inline-start: 0;
+   
+}
+   
+
+.cardlista-pokemons{
+    list-style: none;
+	padding: 40px;
+	color: #222;
+	text-align: center;
+	border-radius: 20px;
+    position: relative; 
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}
+
+.cardlista-pokemons::after{
+
+    content: "";
+    display: block;
+    width: 50%;
+    height: 45%;
+    border-radius: 100%;
+    background-color: rgb(227, 222, 247);
+    opacity: .7;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+
+}
+    
+    
+   
+
+.steel {
+	background-color: #ffffff;
+}
+
+.fire {
+	background-color: #ffffff;
+}
+
+.grass {
+	background-color: #ffffff;
+}
+
+.electric {
+	background-color: #ffffff;
+}
+
+.water, .ice {
+	background-color: #ffffff;
+}
+
+.ground {
+	background-color: #ffffff;
+}
+
+.rock {
+	background-color: #ffffff;
+}
+
+.fairy {
+	background-color: #ffffff;
+}
+
+.poison {
+	background-color: #ffffff;
+}
+
+.bug {
+	background-color: #ffffff;
+}
+
+.dragon {
+	background-color: #ffffff;
+}
+
+.psychic {
+	background-color: #ffffff;
+}
+
+.flying {
+	background-color: #ffffff;
+}
+
+.fighting {
+	background-color: #ffffff;
+}
+
+.ghost{
+    background-color: #ffffff;
+}  
+
+
+.normal {
+	background-color: #ffffff;
+}
+
+.cardlista-pokemons:hover {
+	animation: bounce 0.5s linear;
+}
+
+
+
+
+.card-titulo{
+    text-transform: capitalize;
+    color: blue;
+	margin-bottom: 0px;
+	font-size: 24px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+   
+}
+
+.card-subtitulo{
+    margin-top: 5px;
+    color:#41BA16;
+    font-size: 18PX;
+	font-weight: lighter;
+	position: relative;
+	z-index: 2;  
+}
+
+.card-imagem{
+    
+    height: 180px;
+	position: relative;
+	z-index: 2;
+ 
+}
+
+@keyframes bounce {
+	20% {
+			transform: translateY(-6px);
+	}
+	40% {
+			transform: translateY(0px);
+	}
+
+	80% {
+			transform: translateY(-2px);
+	}
+	100% {
+			transform: translateY(0);
+	}
+}
+
+
+
+/* MEDIA QUERIES  */
+
+@media (min-width: 375px){
+
+    .pokedex{
+         
+        margin-top: 10%;
+    }
+  
+  
+  
+    .ver-pokemons{
+        font-size: 18px;
+        width: 200px;
+        height: 50px;
+        margin-top: 20%;
+    }
+
+    
+
+}
+
+@media (min-width: 425px){
+
+    .pokedex{
+         
+        margin-top: 10%;
+    }
+  
+  
+  
+    .ver-pokemons{
+        font-size: 18px;
+        width: 200px;
+        height: 50px;
+        margin-top: 15%;
+    }
+     
+    .cardlista-pokemons{
+        list-style: none;
+        padding: 40px;
+        color: #222;
+        text-align: center;
+        border-radius: 20px;
+        position: relative;
+        
+    }
+    
+}
+
+@media (min-width: 768px){
+    .logo_pokemon{
+        width: 400px;
+       
+        margin-top: 5% ; 
+    }  
+    
+    .pokedex{
+         
+        margin-top: 5%;
+    }
+
+   
+    .ver-pokemons{
+        font-size: 18px;
+        width: 200px;
+        height: 50px;
+        margin-top: 10%;
+    }
+    
+   .lista-pokedex{
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+   }
+    
+    
+}
+
+
+@media (min-width: 1024px){
+    
+    .pokedex{
+         
+        margin-top: 5%;
+       
+    }
+    
+    
+    .ver-pokemons{
+        font-size: 18px;
+        width: 200px;
+        height: 50px;
+        margin-top: 5%;
+    }
+     
+    .lista-pokedex{
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+}
+
+@media (min-width: 1440px){
+
+    .logo_pokemon{
+        width: 500px;
+       
+        margin-top: 5% ; 
+    }  
+    
+    .pokedex{
+         
+        margin-top: 5%;
+       
+    }
+
+    .ver-pokemons{
+        font-size: 22px;
+        width: 230px;
+        height: 60px;
+        margin-top: 5%;
+    }
+        
+
+    .lista-pokedex{
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+}
+
+
+@media (min-width: 2560px){
+
+    .logo_pokemon{
+        width: 800px;
+        margin-top: 5% ; 
+    }
+
+
+    .pokedex{
+       margin-top: 5%;
+      font-size: 60px;
+    }
+
+    .ver-pokemons{
+        font-size: 36px;
+        width: 450px;
+        height: 100px;
+        margin-top: 5%;
+    }
+        
+    .lista-pokedex{
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    .card-titulo{
+        font-size: 32px;
+    }
+
+    .card-subtitulo{
+        
+        font-size: 24px;
+    }
+    
+    
+    .card-imagem{
+        width: 200px;
+    }
+
+
+}  
+        
+
+
+
+    
+
+   
+
+
+
+
+
+
+
+
+
